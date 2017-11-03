@@ -1,4 +1,5 @@
 ## 11-2-17 report
+### Amal
  - took a fist pass at sentiment analysis
  - was going to annotate w/ comments, but think its easier to explain in person if you don't understand
  - used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
