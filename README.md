@@ -1,3 +1,13 @@
+## 11-2-17 report
+ - took a fist pass at sentiment analysis
+ - was going to annotate w/ comments, but think its easier to explain in person if you don't understand
+ - used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
+ - Also --- will test other classifier models
+ - Note also there is no preprocessing - which should improve model performance
+ - We also need to tune hyperparameters
+ - Any of the above are good things for you guys to do
+ - when in doubt copy the notebook when you edit to avoid merge conflicts
+
 # TODO
 - [ ] tweet preprocessing - Amal
 - [ ] tweet featurization - Amal
