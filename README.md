@@ -1,11 +1,17 @@
 ## 11-2-17 report
 ### Amal
- - took a fist pass at sentiment analysis
+ - took a first pass at sentiment analysis
+ - Note the general workflow in the notebook
+ 	- generate vectors to represent words
+ 	- aggregate word vectors for each tweet into a single vector for each tweet
+ 	- train a classifier on tweet vectors
  - was going to annotate w/ comments, but think its easier to explain in person if you don't understand
+ #### TODO
  - used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
  - Also --- will test other classifier models
  - Note also there is no preprocessing - which should improve model performance
  - We also need to tune hyperparameters
+ #### Comments
  - Any of the above are good things for you guys to do
  - when in doubt copy the notebook when you edit to avoid merge conflicts
 
