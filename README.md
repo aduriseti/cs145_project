@@ -1,6 +1,18 @@
 ## 11-5-17  Report
 ### Amal
+- [ ] beautified notebook and streamlined/standardized ML pipeline
+- [ ] added more classifiers
+- [ ] added some comments to explain some esoteric stuff I forgot why I did
 - [ ] also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
+#### TODO
+ - [ ] used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
+ - [ ] @Fred the above featurization schemes should answer your question as to the different ways to featurize the tweets - I will tentatively assign comparison to you
+ - [ ] Note also there is no preprocessing - which should improve model performance
+ - [ ] We also need to tune hyperparameters
+#### Comments
+ - Any of the above are good things for you guys to do
+ - when in doubt copy the notebook when you edit to avoid merge conflicts
+ - guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
 
 ## Midterm report TODO
 ### Amal
@@ -18,7 +30,6 @@ maybe have a quick discussion of relative merits
 - [ ] I would also say a discussion of other features not currently being used is warranted (tweet date, user metadata, images, etc...)
 - [ ] when you get a chance pls resolve merge conflicts and submit a pull request
 
-also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
 
 
 ## 11-2-17 report
