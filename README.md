@@ -4,6 +4,7 @@
 - added more classifiers
 - added some comments to explain some esoteric stuff I forgot why I did
 - also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
+- converted apiTest nb to python tweet crawler and made run script and sample tweet json
 #### TODO
  - [ ] used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
  - [ ] @Fred the above featurization schemes should answer your question as to the different ways to featurize the tweets - I will tentatively assign comparison to you
@@ -21,6 +22,7 @@
 only if we get a larger dataset will a richer model like a NN be usefull
 - [x] also I am seeing a submission link for a crawler code - I'll de notebookify what I already did and make a sample tweet json
 - [x] I'll add two new classifiers (SVC, MLP)
+- [x] denotebookify crawler and create run script as well as sample tweet json file
 
 ### Jonny
 - [ ] also @Jonny Hurwitz it is important you include the ROC and PR/RC plots and associated AUC statistics
