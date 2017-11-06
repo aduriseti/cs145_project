@@ -1,3 +1,26 @@
+## 11-5-17  Report
+### Amal
+- [ ] also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
+
+## Midterm report TODO
+### Amal
+- [ ] @Fred - it is very easy to use a mlp for classification - in general it will achieve similar performance as random forest but will take longer to train, making iterating other aspects of our model pipeline more difficult
+- [ ] I will add a mlp test in the notebook and include the time to demonstrate my point
+only if we get a larger dataset will a richer model like a NN be usefull
+- [ ] also I am seeing a submission link for a crawler code - I'll de notebookify what I already did and make a sample tweet json
+- [ ] I'll add two new classifiers (SVC, MLP)
+
+### Jonny
+- [ ] also @Jonny Hurwitz it is important you include the ROC and PR/RC plots and associated AUC statistics
+- [ ] also pls add f1 score - it is a good way to combine recall and precision
+- [ ] I'll add two new classifiers (SVC, MLP) and we can include the plots for those guys too
+maybe have a quick discussion of relative merits
+- [ ] I would also say a discussion of other features not currently being used is warranted (tweet date, user metadata, images, etc...)
+- [ ] when you get a chance pls resolve merge conflicts and submit a pull request
+
+also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
+
+
 ## 11-2-17 report
 ### Amal
  - took a first pass at sentiment analysis
