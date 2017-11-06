@@ -1,9 +1,9 @@
 ## 11-5-17  Report
 ### Amal
-- [ ] beautified notebook and streamlined/standardized ML pipeline
-- [ ] added more classifiers
-- [ ] added some comments to explain some esoteric stuff I forgot why I did
-- [ ] also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
+- beautified notebook and streamlined/standardized ML pipeline
+- added more classifiers
+- added some comments to explain some esoteric stuff I forgot why I did
+- also guys for future reference please BRANCH instead of FORK from the repo - its much easier to manage IMO
 #### TODO
  - [ ] used word2vec for this pass -- but will also try w/ LDA/LSI/docv2vec as well
  - [ ] @Fred the above featurization schemes should answer your question as to the different ways to featurize the tweets - I will tentatively assign comparison to you
@@ -16,11 +16,11 @@
 
 ## Midterm report TODO
 ### Amal
-- [ ] @Fred - it is very easy to use a mlp for classification - in general it will achieve similar performance as random forest but will take longer to train, making iterating other aspects of our model pipeline more difficult
-- [ ] I will add a mlp test in the notebook and include the time to demonstrate my point
+- [x] @Fred - it is very easy to use a mlp for classification - in general it will achieve similar performance as random forest but will take longer to train, making iterating other aspects of our model pipeline more difficult
+- [x] I will add a mlp test in the notebook and include the time to demonstrate my point
 only if we get a larger dataset will a richer model like a NN be usefull
-- [ ] also I am seeing a submission link for a crawler code - I'll de notebookify what I already did and make a sample tweet json
-- [ ] I'll add two new classifiers (SVC, MLP)
+- [x] also I am seeing a submission link for a crawler code - I'll de notebookify what I already did and make a sample tweet json
+- [x] I'll add two new classifiers (SVC, MLP)
 
 ### Jonny
 - [ ] also @Jonny Hurwitz it is important you include the ROC and PR/RC plots and associated AUC statistics
