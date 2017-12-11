@@ -83,8 +83,9 @@ The data crawler performs tweet lookup, preprocessing, and labeling for an arbit
 Within the scope of this project, the queries were all stock tickers for several large companies: AAPL, AMZN, SNE, GOOG, NVDA, INTC, HPQ, MSFT, IBM, and TXN. Each of these tickers is given their own thread to perform the lookup, filtering, and labeling. The initial intent was to perform a live lookup on Yahoo finance in order to obtain stock prices for labeling, but there were issues with Yahoo finance historical data. After writing a function to pull data using BeautifulSoup, we decided it would be best to just download local csv files from Yahoo containing the data for each ticker over the desired time range (from min to max date). 
 \par 
 For each day in the date range, the crawler queries twitter and limits the number of tweets pulled via the "max\_tweets" parameter.  Tweets are processed in batches corresponding to each day. Tweets for a specific ticker that were posted on a day in which there is no associated stock price are removed from the set. Duplicates are also removed. Stock price labels are 5-D and consist of the open, high, low, close, and adj close. The intent was to provide the maximum amount of information for us to use in learning algorithm evaluation. Following a successful tweet:label pairing, the crawler writes this to a file along with the date of the tweet and continues.
+
 \section{Sentiment Analysis}
-We trained a variety of classifiers on the Twitter sentiment analysis training corpus. These included random forest, multi-layer perceptron (MLP), and quadratic discriminant analysis. SVM was avoided due to long training time. Metrics used to judge performance include accuracy, precision, recall, and F1 score. 
+We trained a variety of classifiers on the Twitter sentiment analysis training corpus. These included random forest, multi-layer perceptron (MLP), and quadratic discriminant analysis. In addition, we tested the RNN-based long short-term memory (LSTM) model. SVM was avoided due to long training time. Metrics used to judge performance include accuracy, precision, recall, and F1 score. 
 \par
 The embedding scheme involved using word2vec and a mean aggregation method. The word2vec vectors are trained on the set of aggregated tweets created by the crawler. For each word within a tweet, we check to see if it is in the trained word2vec model. If so, the word2vec vector corresponding to that word gets added to a running sum for the tweet. If a word does not appear in the word2vec model, then it is zero padded. After all the words have been checked, this summed vector is divided element-wise by the number of words in the tweet in order to obtain a mean vector. This is a form of summarization. 
 \par
@@ -180,7 +181,67 @@ QDA is a Bayesian classifier. Training and test accuracies were better than the 
 	\centering\includegraphics[scale=0.55]{prrc_qda} 
 	\caption{\textbf{Figure 6: QDA classifier precision vs. recall with AUC Gain=0.26 }}
 \end{figure}
+
+
+\subsection{LSTM}
+The LSTM has a notion of memory. Its memory cell consists of four main elements: an input gate, a neuron with a path back to itself, a forget gate, and an output gate. The loop back allows the state of a memory cell to remain constant through time. The forget gate modulates the loop back and can allow the cell to “delete” or “forget” its previous state. LSTMs do not suffer from the vanishing or exploding gradient problem when long sequences are processed. It is an effective model for data that exhibits long-chain dependencies.  
+\subsubsection{LSTM Architecture}
+\begin{figure}[H]
+	%	\hspace*{-1.3cm}
+	\centering\includegraphics[scale=0.5]{lstm_image} 
+	\caption{\textbf{ LSTM architecture.}}
+\end{figure}
+
+The figure above shows the basic LSTM architecture, including the notion of time (t-1 is introduced) and the gates previously discussed. Corresponding functions are shown below.
+\begin{figure}[H]
+	%	\hspace*{-1.3cm}
+	\centering\includegraphics[scale=0.5]{lstm_functions} 
+	\caption{\textbf{ LSTM functions.}}
+\end{figure}
+
+Our specific network's architecture consists of three layers. Words will be fed into the word embedding layer, which will map words to word embeddings. The resulting word vectors are passed into LSTM cells, whose output will be passed into a dense layer with softmax activation function, and makes a prediction.
+\begin{figure}[H]
+	%	\hspace*{-1.3cm}
+	\centering\includegraphics[scale=0.3]{architecture} 
+	\caption{\textbf{ LSTM implementation architecture.}}
+\end{figure}
+
+\subsubsection{LSTM Implementation}
+Our LSTM model is implemented with Keras, running on top of TensorFlow. Keras is a high-level neural network API, which allowed us to quickly implement the model by simply stacking layers together:
+{\tt \small
+	\begin{verbatim}
+	model = Sequential()
+	model.add(Embedding(...))
+	model.add(Dropout(...))
+	model.add(LSTM(...))
+	model.add(Dense(..., activation='softmax'))
+	\end{verbatim}
+}
+
+Our work largely follows Peter Nagy's implementation\cite{peter}, but we modified the network and tuned hyperparameters to suit our needs. Training the model took two hours to finish.
+
+\subsubsection{LSTM Results}
+The model achieves an F1-score of 0.81 and an Accuracy of 0.81 on test datasets, outperforming the first classifier's F1-score of 0.78 and Accuracy of 0.75.  \\
+%TODO verify max classifier performance
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		
+		\hline
+		Metrics & Value \\
+		\hline
+		Accuracy & 0.810448419184 \\
+		Precision & 0.803874201171 \\
+		Recall & 0.822235970902 \\
+		F1-score & 0.812951416989 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+
+
 \section{Stock Prediction} 
+
 
 \section{Hyperparameter Tuning}
 The hyperparameter tuning targets the hyperparameters of the word2vec model. Cross-validation was used on the original dataset. Since the MLP classifier had the best performance during the sentiment analysis evaluation phase, we chose to use this is the go-to classifier and invariant pairing. The F1-score of the word2vec + MLP classifier is used as a performance metric. Higher F1 score indicates a better performance. 
@@ -219,8 +280,8 @@ The neighborhood search in the end gives the best candidates for hyperparameters
 
 \section{Discussion}
 
-	
-
+\subsection{Future Work}
+Due to time limitations, we were not able to integrate the trained LSTM model with the rest of our functional blocks. However, our design was pipelined such that blocks (preprocessor, embedding scheme, sentiment analysis, and prediction) can be easily interchanged. 
 % include your own bib file like this:
 %\bibliographystyle{acl}
 %\bibliography{acl2017}
