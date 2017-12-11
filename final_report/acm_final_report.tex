@@ -53,6 +53,7 @@
 %for [H]
 \usepackage{float}
 \usepackage{graphicx}
+\newcommand\BibTeX{B{\sc ib}\TeX}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
 \usepackage{url}
@@ -136,30 +137,30 @@
 % 1st. author
 \alignauthor
 Amal Duriseti\\%\titlenote{Dr.~Trovato insisted his name be first.}\\
-       \affaddr{904331855}\\
+       \affaddr{\small{904331855}}\\
     %   \affaddr{1932 Wallamaloo Lane}\\
       % \affaddr{Los Angeles, California}\\
-       \email{aduriseti@gmail.com}
+       \email{\small{aduriseti@gmail.com}}
 % 2nd. author
 \alignauthor
 Jonathan Hurwitz\\
-       \affaddr{804258351}\\
+       \affaddr{\small{804258351}}\\
       % \affaddr{P.O. Box 1212}\\
        %\affaddr{Los Angeles, California}\\
-       \email{jdhurwitz@ucla.edu}
+       \email{\small{jdhurwitz@ucla.edu}}
 % 3rd. author
 \alignauthor  Fred Xu\\
-       \affaddr{004255573}\\
+       \affaddr{\small{004255573}}\\
      %  \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
        %\affaddr{}\\
-       \email{xuzeyuanfred@ucla.edu}
+       \email{\small{xuzeyuanfred@ucla.edu}}
 \and  % use '\and' if you need 'another row' of author names
 % 4th. author
 \alignauthor Jerry Chen\\
-       \affaddr{804449266}\\
+       \affaddr{\small{804449266}}\\
      %  \affaddr{Brookhaven National Lab}\\
       % \affaddr{P.O. Box 5000}\\
-       \email{hostmissile@hotmail.com}
+       \email{\small{hostmissile@hotmail.com}}
 }
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
@@ -171,7 +172,7 @@ Jonathan Hurwitz\\
 
 \maketitle
 
-	\maketitle
+	
 	\begin{abstract}
 		This project aims to predict buy or sell indicators for several large S\&P500 companies based on Twitter data. This is a form of classification rather than regression. The first iteration of our project aimed to predict mood based on tweets, but we pivoted and leveraged learnings from the previously done sentiment analysis work in order to build our stock predictor. Several machine learning models have been tested and compared. We settled on using a feed-forward neural network, or multi-layer perceptron (MLP), to perform the predictions.  
 	\end{abstract}
@@ -448,7 +449,7 @@ By comparing the (F1,Accuracy,Precision,Recall) 4-ples for training and test set
 
 
 \section{Conclusion}
-Our performance, as indicated by F1-score, precision, recall, and accuracy, was reasonably high for the stock prediction class. Our F1-score of 0.7477 on the test set  significantly outperformed the random classifier. We chose MLP over the LSTM due to the faster training time, but given more time we would have liked to integrate the LSTM into the stock prediction pipeline rather than having it exist as just an exploratory design.
+Our performance, as indicated by F1-score, precision, recall, and accuracy, was reasonably high for the stock prediction class. Our F1-score of 0.7477 on the test set significantly outperformed the random classifier. We chose MLP over the LSTM due to the faster training time, but given more time we would have liked to integrate the LSTM into the stock prediction pipeline rather than having it exist as just an exploratory design.
 	\subsection{Future Work}
 	Due to time limitations, we were not able to integrate the trained LSTM model with the rest of our functional blocks. However, our design was pipelined such that blocks (preprocessor, embedding scheme, sentiment analysis, and prediction) can be easily interchanged. Apart from adding in the LSTM, we would like to investigate other word embedding methods (such as GloVe), as well as other text-to-vector summarization methods. 
 	\par
@@ -478,15 +479,11 @@ Our performance, as indicated by F1-score, precision, recall, and accuracy, was 
 	%\bibliographystyle{acl_natbib}
 	
 	
-\section{References}
-\begin{enumerate}
-	\item Johan Bollen et al., Twitter mood predicts the stock market, Arxiv, 2010
-	\item Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. Efficient Estimation of Word Representations in Vector Space. In Proceedings of Workshop at ICLR, 2013
-	\item Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. Distributed Representations of Words and Phrases and their Compositionality. In Proceedings of NIPS, 2013
-	\item Quoc Le and Tomas Mikolov. Distributed Representations of Sentences and Documents
-\end{enumerate}
 
 
+
+\bibliographystyle{acm}
+\bibliography{acm_final_report}
 
 
 	%\appendix
