@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 DEC 2017 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 DEC 2017 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,12 +645,12 @@ Overfull \hbox (9.85074pt too wide) in paragraph at lines 459--473
 on
  []
 
-(./acm_final_report.bblpdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 
-      [6 <./mlp1.png> <./mlp2.png>])
+l.482 \newpage
+               [6 <./mlp1.png> <./mlp2.png>] (./acm_final_report.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
@@ -695,7 +695,7 @@ ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on acm_final_report.pdf (7 pages, 362285 bytes).
+Output written on acm_final_report.pdf (7 pages, 362371 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  201 compressed objects within 3 object streams
