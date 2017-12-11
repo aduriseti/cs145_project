@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  10 DEC 2017 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  10 DEC 2017 21:52
 entering extended mode
 **./acm_final_report.tex
 (acm_final_report.tex
@@ -435,46 +435,37 @@ LaTeX Info: Redefining \nameref on input line 60.
 \@outlinefile=\write4
 \openout4 = `acm_final_report.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 177.
+LaTeX Font Info:    Try loading font information for U+msa on input line 173.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 177.
+LaTeX Font Info:    Try loading font information for U+msb on input line 173.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 177.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 173.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 177.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 173.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 177.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
-
-Underfull \hbox (badness 2073) in paragraph at lines 185--185
+Underfull \hbox (badness 2073) in paragraph at lines 181--181
 [][][]\T1/aer/m/n/9 The sen-ti-ment anal-y-sis cor-pus con-tains 1.5M tweets
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/aer/m/n/9 and can be down-loaded at []$http : / / thinknook . com /
  []
 
 
-Overfull \hbox (15.78746pt too wide) in paragraph at lines 185--185
+Overfull \hbox (15.78746pt too wide) in paragraph at lines 181--181
 \T1/aer/m/n/9 twitter-[]sentiment-[]analysis-[]training-[]corpus-[]dataset-[]20
 12-[]09-[]22/$[]| 
  []
@@ -483,21 +474,21 @@ Overfull \hbox (15.78746pt too wide) in paragraph at lines 185--185
 
 
 ]
-Overfull \hbox (5.3618pt too wide) in paragraph at lines 214--221
+Overfull \hbox (5.3618pt too wide) in paragraph at lines 210--217
 \T1/aer/m/n/9 plot of (Pre-ci-sion,Recall) pairs for dif-fer-ent prob-a-bil-ity
  thresh-
  []
 
-<ROC_rf.png, id=110, 408.52625pt x 272.01625pt>
+<ROC_rf.png, id=111, 408.52625pt x 272.01625pt>
 File: ROC_rf.png Graphic file (type png)
  <use ROC_rf.png>
-Package pdftex.def Info: ROC_rf.png used on input line 244.
+Package pdftex.def Info: ROC_rf.png used on input line 240.
 (pdftex.def)             Requested size: 224.69012pt x 149.60939pt.
 
-<prrc_rf.png, id=112, 408.52625pt x 268.00125pt>
+<prrc_rf.png, id=113, 408.52625pt x 268.00125pt>
 File: prrc_rf.png Graphic file (type png)
  <use prrc_rf.png>
-Package pdftex.def Info: prrc_rf.png used on input line 251.
+Package pdftex.def Info: prrc_rf.png used on input line 247.
 (pdftex.def)             Requested size: 224.69012pt x 147.40112pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -506,33 +497,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 
-       [2 <./ROC_rf.png>] <ROC_qda.png, id=123, 394.47375pt x 277.035pt>
+l.250 
+       [2 <./ROC_rf.png>] <ROC_qda.png, id=124, 394.47375pt x 277.035pt>
 File: ROC_qda.png Graphic file (type png)
 
 <use ROC_qda.png>
-Package pdftex.def Info: ROC_qda.png used on input line 274.
+Package pdftex.def Info: ROC_qda.png used on input line 270.
 (pdftex.def)             Requested size: 216.96123pt x 152.3697pt.
- <prrc_qda.png, id=124, 390.45876pt x 272.01625pt>
+ <prrc_qda.png, id=125, 390.45876pt x 272.01625pt>
 File: prrc_qda.png Graphic file (type png)
 
 <use prrc_qda.png>
-Package pdftex.def Info: prrc_qda.png used on input line 281.
+Package pdftex.def Info: prrc_qda.png used on input line 277.
 (pdftex.def)             Requested size: 214.75298pt x 149.60939pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<ROC_nn.png, id=125, 402.50375pt x 266.9975pt>
+<ROC_nn.png, id=126, 402.50375pt x 266.9975pt>
 File: ROC_nn.png Graphic file (type png)
  <use ROC_nn.png>
-Package pdftex.def Info: ROC_nn.png used on input line 306.
+Package pdftex.def Info: ROC_nn.png used on input line 302.
 (pdftex.def)             Requested size: 221.37775pt x 146.84906pt.
 
-<prrc_nn.png, id=126, 393.47pt x 261.97874pt>
+<prrc_nn.png, id=127, 393.47pt x 261.97874pt>
 File: prrc_nn.png Graphic file (type png)
  <use prrc_nn.png>
-Package pdftex.def Info: prrc_nn.png used on input line 314.
+Package pdftex.def Info: prrc_nn.png used on input line 310.
 (pdftex.def)             Requested size: 216.40915pt x 144.08875pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -541,58 +532,64 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.317 
+l.313 
        [3 <./prrc_rf.png> <./ROC_qda.png> <./prrc_qda.png> <./ROC_nn.png>]
-<lstm_image.png, id=140, 335.2525pt x 224.84pt>
+<lstm_image.png, id=141, 335.2525pt x 224.84pt>
 File: lstm_image.png Graphic file (type png)
  <use lstm_image.png>
-Package pdftex.def Info: lstm_image.png used on input line 328.
+Package pdftex.def Info: lstm_image.png used on input line 324.
 (pdftex.def)             Requested size: 167.62584pt x 112.41972pt.
 
-<lstm_functions.png, id=141, 344.28625pt x 194.7275pt>
+<lstm_functions.png, id=142, 344.28625pt x 194.7275pt>
 File: lstm_functions.png Graphic file (type png)
 
 <use lstm_functions.png>
-Package pdftex.def Info: lstm_functions.png used on input line 335.
+Package pdftex.def Info: lstm_functions.png used on input line 331.
 (pdftex.def)             Requested size: 172.1427pt x 97.3635pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<architecture.png, id=142, 463.7325pt x 1029.8475pt>
+<architecture.png, id=143, 463.7325pt x 1029.8475pt>
 File: architecture.png Graphic file (type png)
  <use architecture.png>
-Package pdftex.def Info: architecture.png used on input line 342.
+Package pdftex.def Info: architecture.png used on input line 339.
 (pdftex.def)             Requested size: 139.12082pt x 308.95663pt.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 348.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 345.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 
-LaTeX Warning: Citation `peter' on page \thepage  undefined on input line 358.
+LaTeX Warning: Citation `peter' on page \thepage  undefined on input line 355.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.360 	\subsubsection
-                     {LSTM Results} [4 <./prrc_nn.png> <./lstm_image.png> <./ls
-tm_functions.png> <./architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 361--363
+l.356 
+       [4 <./prrc_nn.png> <./lstm_image.png> <./lstm_functions.png> <./architec
+ture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
 
-Overfull \hbox (6.03584pt too wide) in paragraph at lines 386--387
+Overfull \hbox (6.03584pt too wide) in paragraph at lines 384--385
 []\T1/aett/m/n/9 min_count\T1/aer/m/n/9 , which de-fines the cut-off thresh-old
  for words. 
  []
 
 
-Overfull \hbox (14.66878pt too wide) in paragraph at lines 396--412
-[] \T1/aer/m/n/9 The
+Underfull \hbox (badness 10000) in paragraph at lines 394--412
+
+ []
+
+
+Overfull \hbox (14.61029pt too wide) in paragraph at lines 394--412
+\T1/aer/m/n/9 dates for hy-per-pa-ram-e-ters: (140,1,7,9), (140,1,8,9), (140,1,
+8,10),
  []
 
 
@@ -622,11 +619,6 @@ Overfull \hbox (13.69963pt too wide) in paragraph at lines 418--419
 
  []
 
-<mlp1.png, id=155, 386.44376pt x 266.9975pt>
-File: mlp1.png Graphic file (type png)
- <use mlp1.png>
-Package pdftex.def Info: mlp1.png used on input line 436.
-(pdftex.def)             Requested size: 231.86804pt x 160.19972pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -634,66 +626,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.439 
-       [5] <mlp2.png, id=162, 377.41pt x 268.00125pt>
+l.433 
+       [5] <mlp1.png, id=162, 386.44376pt x 266.9975pt>
+File: mlp1.png Graphic file (type png)
+ <use mlp1.png>
+Package pdftex.def Info: mlp1.png used on input line 436.
+(pdftex.def)             Requested size: 231.86804pt x 160.19972pt.
+
+<mlp2.png, id=163, 377.41pt x 268.00125pt>
 File: mlp2.png Graphic file (type png)
  <use mlp2.png>
 Package pdftex.def Info: mlp2.png used on input line 442.
 (pdftex.def)             Requested size: 226.44774pt x 160.80197pt.
 
-Overfull \hbox (9.85074pt too wide) in paragraph at lines 456--470
+Overfull \hbox (9.85074pt too wide) in paragraph at lines 458--472
 \T1/aer/m/n/9 met-rics. Then, he per-formed the stock pre-dic-tion/classificati
 on
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 494.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.494 \end{document}
+l.496 \end{document}
                      [6 <./mlp1.png> <./mlp2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 494.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
  (acm_final_report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 494.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 494.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 496.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package rerunfilecheck Info: File `acm_final_report.out' has not changed.
+(rerunfilecheck)             Checksum: 58FF3CA0FB02713A56E62EA32F5E4743;1386.
 
-
-Package rerunfilecheck Warning: File `acm_final_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `acm_final_report.out':
-(rerunfilecheck)             Before: 32E3C0532380CC325621E88ABD8C7D0F;1299
-(rerunfilecheck)             After:  F70FFC0E5F58F5ED198FBF407DC03EF6;1386.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 494.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
  ) 
 Here is how much of TeX's memory you used:
- 6916 strings out of 493333
- 97079 string characters out of 3139186
+ 6897 strings out of 493333
+ 96770 string characters out of 3139186
  198977 words of memory out of 3000000
- 10245 multiletter control sequences out of 15000+200000
- 57114 words of font info for 83 fonts, out of 3000000 for 9000
+ 10230 multiletter control sequences out of 15000+200000
+ 55978 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,37p,900b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,37p,900b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on acm_final_report.pdf (6 pages, 371484 bytes).
+/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on acm_final_report.pdf (6 pages, 347718 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

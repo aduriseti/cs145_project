@@ -60,7 +60,7 @@
 \begin{document}
 
 % Copyright
-\setcopyright{acmcopyright}
+%\setcopyright{acmcopyright}
 %\setcopyright{acmlicensed}
 %\setcopyright{rightsretained}
 %\setcopyright{usgov}
@@ -70,19 +70,19 @@
 
 
 % DOI
-\doi{10.475/123_4}
+%\doi{10.475/123_4}
 
 % ISBN
-\isbn{123-4567-24-567/08/06}
+%\isbn{123-4567-24-567/08/06}
 
 %Conference
-\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
+%\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
 
-\acmPrice{\$15.00}
+%\acmPrice{\$15.00}
 
 %
 % --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
 %\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
@@ -118,7 +118,7 @@
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{8} %  in this sample file, there are a *total*
+\numberofauthors{4} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
@@ -164,11 +164,7 @@ Jonathan Hurwitz\\
 % There's nothing stopping you putting the seventh, eighth, etc.
 % author on the opening page (as the 'third row') but we ask,
 % for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
-\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
-email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
-(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
-\date{30 July 1999}
+
 % Just remember to make sure that the TOTAL number of authors
 % is the number that will appear on the first page PLUS the
 % number that will appear in the \additionalauthors section.
@@ -321,7 +317,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 	
 	
 	\subsection{LSTM}
-	The LSTM has a notion of memory. Its memory cell consists of four main elements: an input gate, a neuron with a path back to itself, a forget gate, and an output gate. The loop back allows the state of a memory cell to remain constant through time. The forget gate modulates the loop back and can allow the cell to “delete” or “forget” its previous state. LSTMs do not suffer from the vanishing or exploding gradient problem when long sequences are processed. It is an effective model for data that exhibits long-chain dependencies.  
+	The LSTM has a notion of memory. Its memory cell consists of four main elements: an input gate, a neuron with a path back to itself, a forget gate, and an output gate. The loop back allows the state of a memory cell to remain constant through time. The forget gate modulates the loop back and can allow the cell to "delete" or "forget" its previous state. LSTMs do not suffer from the vanishing or exploding gradient problem when long sequences are processed. It is an effective model for data that exhibits long-chain dependencies.  
 	\subsubsection{LSTM Architecture}
 	\begin{figure}[H]
 		%	\hspace*{-1.3cm}
@@ -336,7 +332,8 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 		\caption{\textbf{ LSTM functions.}}
 	\end{figure}
 	
-	Our specific network's architecture consists of three layers. Words will be fed into the word embedding layer, which will map words to word embeddings. The resulting word vectors are passed into LSTM cells, whose output will be passed into a dense layer with softmax activation function, and makes a prediction.
+	Our specific LSTM network's architecture consists of three layers. Words will be fed into the word embedding layer, which will map words to word embeddings. The resulting word vectors are passed into LSTM cells, whose output will be passed into a dense layer with softmax activation function, and makes a prediction. The high level view of data flow is shown in the implementation architecture in the figure below:
+	
 	\begin{figure}[H]
 		%	\hspace*{-1.3cm}
 		\centering\includegraphics[scale=0.3]{architecture} 
@@ -358,7 +355,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 	Our work largely follows Peter Nagy's implementation\cite{peter}, but we modified the network and tuned hyperparameters to suit our needs. Training the model took two hours to finish.
 	
 	\subsubsection{LSTM Results}
-	The model achieves an F1-score of 0.81 and an Accuracy of 0.81 on test datasets, outperforming the first classifier's F1-score of 0.78 and Accuracy of 0.75.  \\
+	The model achieves an F1-score of 0.81 and an Accuracy of 0.81 on test datasets, outperforming the MLP's F1-score of 0.77 and accuracy of 0.74.  \\
 	%TODO verify max classifier performance
 	
 	\begin{center}
@@ -375,6 +372,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 		\end{tabular}
 	\end{center}
 	
+	While the results are good, the fact that the LSTM took so long to train made it a difficult model to use given our computational setup. With a real ML-machine or access to a set of GPUs in the cloud, we would have been able to more easily integrate it into the flow.
 	\subsection{Hyperparameter Tuning}
 	The hyperparameter tuning targets the hyperparameters of the word2vec model. Cross-validation was used on the original dataset. Since the MLP classifier had the best performance during the sentiment analysis evaluation phase, we chose to use this is the go-to classifier and invariant pairing. The F1-score of the word2vec + MLP classifier is used as a performance metric. Higher F1 score indicates a better performance. 
 	\subsubsection{Testing Methodology}
@@ -408,6 +406,8 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 		iter & 0.6101 & 9 & 9, 10 \\
 		\hline 
 	\end{tabular}
+\\
+\\
 	The neighborhood search in the end gives the best candidates for hyperparameters: (140,1,7,9), (140,1,8,9), (140,1,8,10), and (140,4,8,10).
 	
 	\section{Stock Prediction} 
@@ -447,10 +447,12 @@ We then applied the same battery of evaluation metrics to this dataset as for ou
 By comparing the (F1,Accuracy,Precision,Recall) 4-ples for training and test sets we see there is some overfitting, but we can see the model extrapolates meaningfully to the test dataset by comparing the ROC and Precision/Recall curves (in blue) of our MLP classifier with the random classifier (where decisions are made solely on a biased coin flip, in green).  Note that the ROC and Precision/Recall curves were generated with test set data only.
 
 
-	\section{Discussion}
-	
+\section{Conclusion}
+Our performance, as indicated by F1-score, precision, recall, and accuracy, was reasonably high for the stock prediction class. Our F1-score of 0.7477 on the test set  significantly outperformed the random classifier. We chose MLP over the LSTM due to the faster training time, but given more time we would have liked to integrate the LSTM into the stock prediction pipeline rather than having it exist as just an exploratory design.
 	\subsection{Future Work}
-	Due to time limitations, we were not able to integrate the trained LSTM model with the rest of our functional blocks. However, our design was pipelined such that blocks (preprocessor, embedding scheme, sentiment analysis, and prediction) can be easily interchanged. 
+	Due to time limitations, we were not able to integrate the trained LSTM model with the rest of our functional blocks. However, our design was pipelined such that blocks (preprocessor, embedding scheme, sentiment analysis, and prediction) can be easily interchanged. Apart from adding in the LSTM, we would like to investigate other word embedding methods (such as GloVe), as well as other text-to-vector summarization methods. 
+	\par
+	Since the LSTM model showed a lot of promise, some future work that could be done on it would be to add attention, since a tweet's core meaning is generally encapsulated in a subset of the words rather than in the whole sequence itself. 
 	
 	\subsection{Task Distribution}
 	Our work breakdown is summarized in the table below. Jonathan was responsible for performing the data crawling, preliminary data filtering, and writing the report. Amal preprocessed the crawled data and tested various models for sentiment analysis using the aforementioned performance metrics. Then, he performed the stock prediction/classification task. Jerry performed exploratory work by testing the RNN-based LSTM on the sentiment analysis corpus. Fred performed hyperparameter tuning.
