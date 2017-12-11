@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Data Crawler}{}% 2
+\BOOKMARK [1][-]{section.3}{Sentiment Analysis}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Random Forest}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Multi-Layer Perceptron}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Quadratic Discriminant Analysis}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{LSTM}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.4.1}{LSTM Architecture}{subsection.3.4}% 8
+\BOOKMARK [3][-]{subsubsection.3.4.2}{LSTM Implementation}{subsection.3.4}% 9
+\BOOKMARK [3][-]{subsubsection.3.4.3}{LSTM Results}{subsection.3.4}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Hyperparameter Tuning}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Testing Methodology}{subsection.3.5}% 12
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Testing Results}{subsection.3.5}% 13
+\BOOKMARK [1][-]{section.4}{Stock Prediction}{}% 14
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Future Work}{section.5}% 16

@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Problem Definition and Formalization}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Data Crawler}{}% 3
+\BOOKMARK [1][-]{section.3}{Methods Description}{}% 4
+\BOOKMARK [1][-]{section.4}{Sentiment Analysis}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Sentiment Analysis Performance Metrics}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{Random Forest}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{Quadratic Discriminant Analysis}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{Multi-Layer Perceptron}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.5}{LSTM}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.5.1}{LSTM Architecture}{subsection.4.5}% 11
+\BOOKMARK [3][-]{subsubsection.4.5.2}{LSTM Implementation}{subsection.4.5}% 12
+\BOOKMARK [3][-]{subsubsection.4.5.3}{LSTM Results}{subsection.4.5}% 13
+\BOOKMARK [2][-]{subsection.4.6}{Hyperparameter Tuning}{section.4}% 14
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Testing Methodology}{subsection.4.6}% 15
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Testing Results}{subsection.4.6}% 16
+\BOOKMARK [1][-]{section.5}{Stock Prediction}{}% 17
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Task Distribution}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{References}{}% 21
