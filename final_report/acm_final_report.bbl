@@ -1,3 +1,35 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{1}
+{\sc Bollen, J., Mao, H., and Zeng, X.}
+\newblock Twitter mood predicts the stock market.
+\newblock {\em CoRR abs/1010.3003\/} (2010).
+
+\bibitem{4}
+{\sc Le, Q.~V., and Mikolov, T.}
+\newblock Distributed representations of sentences and documents.
+\newblock {\em CoRR abs/1405.4053\/} (2014).
+
+\bibitem{2}
+{\sc Mikolov, T., Chen, K., Corrado, G., and Dean, J.}
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em CoRR abs/1301.3781\/} (2013).
+
+\bibitem{3}
+{\sc Mikolov, T., Sutskever, I., Chen, K., Corrado, G., and Dean, J.}
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock {\em CoRR abs/1310.4546\/} (2013).
+
+\bibitem{5}
+{\sc Nagy, P.}
+\newblock Lstm sentiment analysis | keras.
+
+\bibitem{Samih}
+{\sc Samih, Y., Maharjan, S., Attia, M., Kallmeyer, L., and Solorio, T.}
+\newblock Multilingual code-switching identification via lstm recurrent neural
+  networks.
+\newblock In {\em Proceedings of the Second Workshop on Computational
+  Approaches to Code Switching,\/} (Austin, TX, 2016), pp.~50--59.
 
 \end{thebibliography}
