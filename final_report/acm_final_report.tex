@@ -183,7 +183,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 	
 	\section{Introduction}
 	The former goal was to create an aggregate mood detector and predictor by training machine learning models to perform sentiment analysis on tweets. This task implicitly includes building some method of obtaining more data, such as a data crawler. While our models showed reasonably good performance when trained on the twitter sentiment analysis training corpus\footnote{The sentiment analysis corpus contains 1.5M tweets and can be downloaded at \url{http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/}}, we realized that some sort of unsupervised learning would have to be done in order to label future data obtained via the crawler. This motivated us to explore other ways in which we could leverage our previous work but for a task with an easier means of labeling data.
-	\par
+	\subsection{Problem Definition and Formalization}
 	Using sentiment to predict buy or sell indicators seemed like a natural progression with an easier way of labeling data. The labeling scheme we chose was to associate each tweet with the corresponding stock price on the day it was tweeted. The crawler pulls tweets and labels each tweet by doing a yahoo finance price lookup. This way, we are able to build an arbitrarily large dataset of labeled tweets in order to better train our models. There is no need for unsupervised learning such as clustering in order to assign class labels.
 	\par
 	To formalize, the goal of the project was, given a set of tweets about a company (by stock ticker), to predict whether the stock would go up or down on the open of the next trading day by using sentiment analysis.

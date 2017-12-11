@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  10 DEC 2017 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.9)  10 DEC 2017 21:30
 entering extended mode
 **./acm_final_report.tex
 (acm_final_report.tex
@@ -499,68 +499,71 @@ File: prrc_rf.png Graphic file (type png)
  <use prrc_rf.png>
 Package pdftex.def Info: prrc_rf.png used on input line 251.
 (pdftex.def)             Requested size: 224.69012pt x 147.40112pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.255 ...bsection{Quadratic Discriminant Analysis}
-                                                   [2 <./ROC_rf.png> <./prrc_rf
-.png>] <ROC_qda.png, id=124, 394.47375pt x 277.035pt>
+l.254 
+       [2 <./ROC_rf.png>] <ROC_qda.png, id=123, 394.47375pt x 277.035pt>
 File: ROC_qda.png Graphic file (type png)
- <use ROC_qda.png>
+
+<use ROC_qda.png>
 Package pdftex.def Info: ROC_qda.png used on input line 274.
 (pdftex.def)             Requested size: 216.96123pt x 152.3697pt.
-
-<prrc_qda.png, id=125, 390.45876pt x 272.01625pt>
+ <prrc_qda.png, id=124, 390.45876pt x 272.01625pt>
 File: prrc_qda.png Graphic file (type png)
- <use prrc_qda.png>
+
+<use prrc_qda.png>
 Package pdftex.def Info: prrc_qda.png used on input line 281.
 (pdftex.def)             Requested size: 214.75298pt x 149.60939pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ROC_nn.png, id=126, 402.50375pt x 266.9975pt>
+<ROC_nn.png, id=125, 402.50375pt x 266.9975pt>
 File: ROC_nn.png Graphic file (type png)
  <use ROC_nn.png>
 Package pdftex.def Info: ROC_nn.png used on input line 306.
 (pdftex.def)             Requested size: 221.37775pt x 146.84906pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<prrc_nn.png, id=127, 393.47pt x 261.97874pt>
+<prrc_nn.png, id=126, 393.47pt x 261.97874pt>
 File: prrc_nn.png Graphic file (type png)
  <use prrc_nn.png>
 Package pdftex.def Info: prrc_nn.png used on input line 314.
 (pdftex.def)             Requested size: 216.40915pt x 144.08875pt.
 
-<lstm_image.png, id=128, 335.2525pt x 224.84pt>
-File: lstm_image.png Graphic file (type png)
- <use lstm_image.png>
-Package pdftex.def Info: lstm_image.png used on input line 328.
-(pdftex.def)             Requested size: 167.62584pt x 112.41972pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.331 
-       [3 <./ROC_qda.png> <./prrc_qda.png> <./ROC_nn.png> <./prrc_nn.png>]
-<lstm_functions.png, id=142, 344.28625pt x 194.7275pt>
+l.317 
+       [3 <./prrc_rf.png> <./ROC_qda.png> <./prrc_qda.png> <./ROC_nn.png>]
+<lstm_image.png, id=140, 335.2525pt x 224.84pt>
+File: lstm_image.png Graphic file (type png)
+ <use lstm_image.png>
+Package pdftex.def Info: lstm_image.png used on input line 328.
+(pdftex.def)             Requested size: 167.62584pt x 112.41972pt.
+
+<lstm_functions.png, id=141, 344.28625pt x 194.7275pt>
 File: lstm_functions.png Graphic file (type png)
 
 <use lstm_functions.png>
 Package pdftex.def Info: lstm_functions.png used on input line 335.
 (pdftex.def)             Requested size: 172.1427pt x 97.3635pt.
- <architecture.png, id=143, 463.7325pt x 1029.8475pt>
-File: architecture.png Graphic file (type png)
-
-<use architecture.png>
-Package pdftex.def Info: architecture.png used on input line 342.
-(pdftex.def)             Requested size: 139.12082pt x 308.95663pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+<architecture.png, id=142, 463.7325pt x 1029.8475pt>
+File: architecture.png Graphic file (type png)
+ <use architecture.png>
+Package pdftex.def Info: architecture.png used on input line 342.
+(pdftex.def)             Requested size: 139.12082pt x 308.95663pt.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 348.
 
 
@@ -570,18 +573,18 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 
 LaTeX Warning: Citation `peter' on page \thepage  undefined on input line 358.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--363
-
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.380 	\subsubsection
-                     {Testing Methodology} [4 <./lstm_image.png> <./lstm_functi
-ons.png> <./architecture.png>]
+l.360 	\subsubsection
+                     {LSTM Results} [4 <./prrc_nn.png> <./lstm_image.png> <./ls
+tm_functions.png> <./architecture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
+
+ []
+
+
 Overfull \hbox (6.03584pt too wide) in paragraph at lines 386--387
 []\T1/aett/m/n/9 min_count\T1/aer/m/n/9 , which de-fines the cut-off thresh-old
  for words. 
@@ -619,23 +622,25 @@ Overfull \hbox (13.69963pt too wide) in paragraph at lines 418--419
 
  []
 
-<mlp1.png, id=154, 386.44376pt x 266.9975pt>
+<mlp1.png, id=155, 386.44376pt x 266.9975pt>
 File: mlp1.png Graphic file (type png)
  <use mlp1.png>
 Package pdftex.def Info: mlp1.png used on input line 436.
 (pdftex.def)             Requested size: 231.86804pt x 160.19972pt.
 
-<mlp2.png, id=155, 377.41pt x 268.00125pt>
-File: mlp2.png Graphic file (type png)
- <use mlp2.png>
-Package pdftex.def Info: mlp2.png used on input line 442.
-(pdftex.def)             Requested size: 226.44774pt x 160.80197pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.445 
-       [5 <./mlp1.png>]
+l.439 
+       [5] <mlp2.png, id=162, 377.41pt x 268.00125pt>
+File: mlp2.png Graphic file (type png)
+ <use mlp2.png>
+Package pdftex.def Info: mlp2.png used on input line 442.
+(pdftex.def)             Requested size: 226.44774pt x 160.80197pt.
+
 Overfull \hbox (9.85074pt too wide) in paragraph at lines 456--470
 \T1/aer/m/n/9 met-rics. Then, he per-formed the stock pre-dic-tion/classificati
 on
@@ -647,23 +652,29 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.494 \end{document}
-                     [6 <./mlp2.png>]
+                     [6 <./mlp1.png> <./mlp2.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 494.
  (acm_final_report.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 494.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 494.
-Package rerunfilecheck Info: File `acm_final_report.out' has not changed.
-(rerunfilecheck)             Checksum: 32E3C0532380CC325621E88ABD8C7D0F;1299.
 
+
+Package rerunfilecheck Warning: File `acm_final_report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `acm_final_report.out':
+(rerunfilecheck)             Before: 32E3C0532380CC325621E88ABD8C7D0F;1299
+(rerunfilecheck)             After:  F70FFC0E5F58F5ED198FBF407DC03EF6;1386.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 494.
  ) 
 Here is how much of TeX's memory you used:
- 6915 strings out of 493333
- 97065 string characters out of 3139186
- 196977 words of memory out of 3000000
+ 6916 strings out of 493333
+ 97079 string characters out of 3139186
+ 198977 words of memory out of 3000000
  10245 multiletter control sequences out of 15000+200000
  57114 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -680,9 +691,9 @@ s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on acm_final_report.pdf (6 pages, 370168 bytes).
+Output written on acm_final_report.pdf (6 pages, 371484 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
