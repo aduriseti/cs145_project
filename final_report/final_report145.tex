@@ -238,14 +238,9 @@ The model achieves an F1-score of 0.81 and an Accuracy of 0.81 on test datasets,
 	\end{tabular}
 \end{center}
 
-
-
-\section{Stock Prediction} 
-
-
-\section{Hyperparameter Tuning}
+\subsection{Hyperparameter Tuning}
 The hyperparameter tuning targets the hyperparameters of the word2vec model. Cross-validation was used on the original dataset. Since the MLP classifier had the best performance during the sentiment analysis evaluation phase, we chose to use this is the go-to classifier and invariant pairing. The F1-score of the word2vec + MLP classifier is used as a performance metric. Higher F1 score indicates a better performance. 
-\subsection{Testing Methodology}
+\subsubsection{Testing Methodology}
 Word2vec turns text messages into word vectors. However, there is no systematic metric for the evaluation of the model alone. Therefore, evaluation of the bundle: Word2vec + MLP, was used to test the performance. \par
 The default method for hyperparameter tuning is to use an exhaustive grid search. However, since a single run of the 5-fold cross validation takes around 50 minutes, and some hyperparameters, such as size and iter, change the amount of work to be done, a brute force method would be too time consuming. Therefore hyperparameter selection and candidate selection was used. In the selection part, several hyperparameters are examined and the relatively important ones are picked. The resulting candidates for the tuning are:
 \begin{itemize}
@@ -260,7 +255,7 @@ This means a 2-D grid search could take around 3000 testing instances, which is 
 \par
 The final candidates were further reduced based on their the neighbor's frequency in the 1-D search. If one of the two neighbors in the 1-D case has significantly lower score, it is omitted. Furthermore, size values are limited to only multiple of 4 to improve performance.
 
-\subsection{Testing Results}
+\subsubsection{Testing Results}
 The following table summaries the 1-D search and the resulting search. 
 %\hspace{-1cm}
 \begin{tabular}{|c|c|c|c|}
@@ -277,6 +272,15 @@ The following table summaries the 1-D search and the resulting search.
 	\hline 
 \end{tabular}
 The neighborhood search in the end gives the best candidates for hyperparameters: (140,1,7,9), (140,1,8,9), (140,1,8,10), and (140,4,8,10).
+
+\section{Stock Prediction} 
+extend our sentiment analysis work to handle twitter data scraped using the API.  Instead, we decided to use historical stock prices as proxy labels for archived tweets.  Because we did not want to introduce another evaluation metric for models, preventing us from comparing stock prediction to sentiment prediction, we decided to perform classification on stock prices instead of regression.  
+\par
+To generate our (feature vector, label) tuples, we grouped tweets by company and date, then reduced the resultant 2D array of word vectors with a multi dimensional average to generate a vector for each stock in our word embedding space.  We did not test more elaborate methods of composing word vectors into stock vectors, in future work, we could use the method of "document" embedding described in \url{https://arxiv.org/abs/1405.4053}.  The authors of this paper augment the standard context vector used as input for the simulated neural net of word2vec by adding an additional vector that describes which "document" (in our case this vector would map to a stock on a specific day) the context vector came from.
+\par
+We then applied the same battery of models and evaluation metrics to this dataset as for our sentiment analysis dataset.
+\par
+
 
 \section{Discussion}
 
